@@ -56,8 +56,8 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.hostinger.com'; // Exemplo Hostinger
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'contato@cafekamaro.com.br'; // Seu e-mail
-    $mail->Password   = 'SENHA_DO_SEU_EMAIL';         // Sua senha
+    $mail->Username   = getenv('MAIL_USERNAME'); // definido na variavel de ambiente MAIL_USERNAME
+    $mail->Password   = getenv('MAIL_PASSWORD');         // definida na variavel de ambiente MAIL_PASSWORD
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 

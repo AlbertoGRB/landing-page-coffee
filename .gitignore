@@ -1,0 +1,9 @@
+# Ignore PHP mailer vendor directories
+mail/PHPMailer/
+# Ignore compiled CSS if using SCSS
+css/
+# Ignore node modules if present
+node_modules/
+# Ignore IDE files
+*.log
+.DS_Store
